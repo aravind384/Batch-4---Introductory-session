@@ -1,0 +1,56 @@
+<DOCTYPE html>
+    <html>
+        <body>
+            <h2>Javascript</h2>
+            <!--<p>We want to add string and number</p>-->
+            <!--<p>We want to create a string</p>-->
+            <!--<p>We want to create an array</p>-->
+            <p>For Addition</p>
+            <p id="demo"></p>
+            <p id="dem"></p>
+            <p id="demm"></p>
+            <p id="de"></p>
+            <p id="d"></p>
+            <p id="c"></p>
+        <script>
+            //let name="aravind";
+            //let lname="achari";
+            //document.getElementById("demo").innerHTML=name+"<br>"+lname;
+            const name1=["aravind","riyaz","tharun"];
+            document.getElementById("c").innerHTML=name1[0];
+            const s=["arvind","riyaz","tharun"];
+            document.getElementById("d").innerHTML=s.toString();
+            const student={  //object declared
+                name : "arvind",
+                lname : "achari",
+                grade : "A"
+            };
+            const friend={
+                frnd1 : "riyaz",
+                frnd2 : "tharun"
+            };
+            function add(a,b)
+            {
+                return a+b;
+            }
+            function reverse(n)
+            {
+                let r;
+                let s=0;
+                while(n>0)
+                {
+                    r=n%10;
+                    s=s*10+r;
+                    n=Math.floor(n/10);
+                }
+                return s;
+            }
+            document.getElementById("demo").innerHTML=student.name+"<br>"+student.lname +" is a very good stuent having "+ student.grade+" grade";
+            document.getElementById("dem").innerHTML=student.name+" friends are "+friend.frnd1+" and "+friend.frnd2;
+            document.getElementById("demm").innerHTML=add(3,4);
+            document.getElementById("de").innerHTML=reverse(258);
+            //var a=window.prompt("what is your name");
+            //document.write("my name is "+a);
+        </script>
+        </body>
+    </html>
